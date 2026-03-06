@@ -1,0 +1,152 @@
+<h1 id="цель-работы"><strong>Цель работы</strong></h1>
+<p>Целью данной лабораторной работы является приобретение практических
+навыков установки операционной системы на виртуальную машину , настройки
+минимально необходимых для дальнейшей работы сервисов.</p>
+<h1 id="задание"><strong>Задание</strong></h1>
+<ul>
+<li>Установка Linux на VirtualBox</li>
+<li>Установка необходимого ПО</li>
+<li>Первоначальная настройка ОС для дальнейшей работы</li>
+</ul>
+<h1 id="теоретическое-введение"><strong>Теоретическое
+введение</strong></h1>
+<p>Oracle VM VirtualBox - программа для виртуализации, позволяющая
+запускать несколько ОС на одном компьютере Поддерживает гостевые системы
+Linux, Solaris, OS/2, Windows(XP-11), macOS (эксперементально) Работает
+на хостах: Windows, Linux, macOS, FreeBSD, Solaris</p>
+<h1 id="выполнение-лабораторной-работы"><strong>Выполнение лабораторной
+работы</strong></h1>
+<p>Создаю виртуальную машину Linux</p>
+<p><img src="image/lab01-1.png" id="fig-001" style="width:70.0%"
+alt="Создание виртуальной машины" /> <img src="image/lab01-2.png"
+id="fig-001" style="width:70.0%" alt="Настройка виртуальной машины" />
+<img src="image/lab01-3.png" id="fig-001" style="width:70.0%"
+alt="Добавили ISO файл" /> <img src="image/lab01-4.png" id="fig-001"
+style="width:70.0%" alt="Запустили liveinst" /></p>
+<p>После мы выходим из виртуальной машины, заходим в настройки, и
+удаляем устройство из контроллера IDE. Запускаем машину вновь, переходим
+в режим суперпользователя и скачиваем необходимые пакеты через
+development-tools</p>
+<p><img src="image/lab01-5.png" id="fig-001" style="width:70.0%"
+alt="Загрузка development-tools" /> <img src="image/lab01-6.png"
+id="fig-001" style="width:70.0%" alt="Скачиваем фреймворк Linux" /></p>
+<p>Выходим из машины и добавляем оптический диск VBoxGuestAdditions.iso,
+заходим обратно, переходим в режим суперпользователя, делаем файловую
+систему доступной для чтения и записи в общей иерархии папок.</p>
+<p><img src="image/lab01-7.png" id="fig-001" style="width:70.0%"
+alt="Монтируем диск" /> <img src="image/lab01-8.png" id="fig-001"
+style="width:70.0%" alt="Устанавливаем драйвера" /> <img
+src="image/lab01-9.png" id="fig-001" style="width:70.0%"
+alt="Выполняем перезагрузку машины" /> <img src="image/lab01-10.png"
+id="fig-001" style="width:70.0%"
+alt="Добавляем пользователя в группу vboxsf" /> <img
+src="image/lab01-11.png" id="fig-001" style="width:70.0%"
+alt="Создание папки work" /> <img src="image/lab01-12.png" id="fig-001"
+style="width:70.0%" alt="Проверка добавления папки work" /></p>
+<p>Выполняем reboot, заходим в режим суперпользователя</p>
+<figure id="fig-001">
+<img src="image/lab01-13.png" style="width:70.0%"
+alt="Обновляем пакеты" />
+<figcaption aria-hidden="true">Обновляем пакеты</figcaption>
+</figure>
+<p>Скачиваем программы для удобства работы в консоли</p>
+<p><img src="image/lab01-14.png" id="fig-001" style="width:70.0%"
+alt="Устанавливаем tmux" /> <img src="image/lab01-15.png" id="fig-001"
+style="width:70.0%" alt="Устанавливаем kitty" /> <img
+src="image/lab01-16.png" id="fig-001" style="width:70.0%"
+alt="Делаем установку программного обеспечения" /></p>
+<p>Задаём конфигурацию в файле /etc/dnf/automatic.conf и запускаем
+таймер</p>
+<p><img src="image/lab01-17.png" id="fig-001" style="width:70.0%"
+alt="Задали конфигурацию в файле" /> <img src="image/lab01-18.png"
+id="fig-001" style="width:70.0%"
+alt="Заполнили файл согласно инструкции" /> <img
+src="image/lab01-19.png" id="fig-001" style="width:70.0%"
+alt="Запустили таймер" /> <img src="image/lab01-20.png" id="fig-001"
+style="width:70.0%"
+alt="Перешли в файл /etc/selinux/config для редактирования" /> <img
+src="image/lab01-21.png" id="fig-001" style="width:70.0%"
+alt="Сменили SELINUX=enforcing на SELINUX=permissive" /> <img
+src="image/lab01-22.png" id="fig-001" style="width:70.0%"
+alt="Делаем перезагрузку" /> <img src="image/lab01-23.png" id="fig-001"
+style="width:70.0%"
+alt="Создаём конфигурационный файл и заходим в редактирование" /> <img
+src="image/lab01-24.png" id="fig-001" style="width:70.0%"
+alt="Заполняем файл" /> <img src="image/lab01-25.png" id="fig-001"
+style="width:70.0%" alt="Проверяем правильность заполнения файла" /></p>
+<p>Редактируем конфигурационный файл
+/etc/X11/xorg.conf.d/00-keyboard.conf</p>
+<p><img src="image/lab01-26.png" id="fig-001" style="width:70.0%"
+alt="Настраиваем опции" /> <img src="image/lab01-27.png" id="fig-001"
+style="width:70.0%" alt="Выполняем перезагрузку" /></p>
+<p>переходим в режим суперпользователя, обновляем пароль, устанавливаем
+имя хоста</p>
+<p><img src="image/lab01-28.png" id="fig-001" style="width:70.0%"
+alt="Обновление пароля" /> <img src="image/lab01-29.png" id="fig-001"
+style="width:70.0%" alt="Устанавливаем имя хоста" /> <img
+src="image/lab01-30.png" id="fig-001" style="width:70.0%"
+alt="Устанавливаем пакеты для pandoc" /> <img src="image/lab01-31.png"
+id="fig-001" style="width:70.0%" alt="Узнаём версию pandoc" /></p>
+<p>Далее переходим в github и скачиваем нужную версию pandoc</p>
+<p><img src="image/lab01-32.png" id="fig-001" style="width:70.0%"
+alt="Скачиваем pandoc" /> <img src="image/lab01-33.png" id="fig-001"
+style="width:70.0%"
+alt="Разархивируем файл с pandoc, загружаем texlive" /></p>
+<h1 id="выполнение-домашней-работы"><strong>Выполнение домашней
+работы</strong></h1>
+<p><img src="image/lab01-34.png" id="fig-001" style="width:70.0%"
+alt="Получаем версию Линукса, узнаём частоту процессора" /> <img
+src="image/lab01-35.png" id="fig-001" style="width:70.0%"
+alt="Выводим данные о процессоре" /> <img src="image/lab01-36.png"
+id="fig-001" style="width:70.0%"
+alt="Информация об использовании оперативной памяти (RAM)" /> <img
+src="image/lab01-37.png" id="fig-001" style="width:70.0%"
+alt="Информация о гипервизоре" /> <img src="image/lab01-38.png"
+id="fig-001" style="width:70.0%"
+alt="Тип файловой системы корневого раздела" /> <img
+src="image/lab01-39.png" id="fig-001" style="width:70.0%"
+alt="Последовательность монтирования файловых систем" /></p>
+<h1 id="ответы-на-контрольные-вопросы"><strong>Ответы на контрольные
+вопросы</strong></h1>
+<ol type="1">
+<li>Учётная запись содержит данные для идентификации пользователя: имя,
+пароль, UID, GID, домашний каталог и командную оболочку shell.</li>
+<li></li>
+</ol>
+<ul>
+<li>Справка по команде: <команда> –help. Пример: ls –help.</li>
+<li>Перемещение по файловой системе: cd <путь>. Пример: cd
+/home/user.</li>
+<li>Просмотр содержимого файла: ls <файл>. Пример:ls -la (покажет все
+файлы и детали).</li>
+<li>Определение объёма каталога: du -sh <каталог>. Пример: du -sh
+/home.</li>
+<li>Создание/удаление каталогов: mkdir <имя> (создаст каталог), rmdir
+<имя> (удалит каталог, если он пустой), rm -r <имя> (удалит каталог с
+содержимым). Пример: mkdir -p books/tom</li>
+<li>Создание/удаление файлов: touch <файл> (создаст файл), rm <файл>
+(удалит файл). Пример: touch kitty, rm kitty</li>
+<li>Задание прав на каталог/файл: chmod <права> <файл>. Пример: chmod
+755 script.sh</li>
+<li>Просмотр истории: history</li>
+</ul>
+<p>3.Файловая система - это способ организации и хранения данных на
+диске. Пример: ext4 - стандартная для Linux, NTFS - стандартная для
+Windows. 4.Чтобы посмотреть подмонтированный диск нужно: написать
+команду mount (покажет все подключённые системы), а затем df -h (покажет
+диски и место, в удобном для чтения виде). 5.Чтобы удалить зависший
+процесс нужно: найти PID процесса (ps aux | grep <имя_программы>), затем
+отправить сигнал завершения (kill <PID>).</p>
+<h1 id="выводы"><strong>Выводы</strong></h1>
+<p>Приобрела практические навыки установки операционной системы на
+виртуальную машину , настройки минимально необходимые для дальнейшей
+работы сервисов.</p>
+<h1 class="unnumbered" id="список-литературы"><strong>Список
+литературы</strong></h1>
+<ul>
+<li>Dash</li>
+<li>P.Getting Started with Oracle VM VirtualBox</li>
+</ul>
+<div id="refs" role="list">
+
+</div>
