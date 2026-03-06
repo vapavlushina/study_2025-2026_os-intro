@@ -2,8 +2,8 @@
 ## Author
 author:
   name: Павлушина Виктория Александровна
-  degrees: DSc
-  orcid: 0000-0002-0877-7063
+  group: НКАбд-05-25
+  student-id: 1032253555
   email: akutagawa_39@bk.ru
   affiliation:
     - name: Российский университет дружбы народов
