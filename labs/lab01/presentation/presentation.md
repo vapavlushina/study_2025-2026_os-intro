@@ -4,7 +4,7 @@ author:
   name: Павлушина Виктория Александровна
   group: НКАбд-05-25
   student-id: 1032253555
-  email: akutagawa_39@bk.ru
+  email: 1032253555@pfur.ru
   affiliation:
     - name: Российский университет дружбы народов
       country: Российская Федерация
