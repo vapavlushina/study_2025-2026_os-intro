@@ -13,10 +13,10 @@ bibliography: bib/cite.bib
 csl: pandoc/csl/gost-r-7-0-5-2008-numeric.csl
 
 ## Pdf output format
-toc: true # Table of contents
+toc: true
 toc-depth: 2
-lof: true # List of figures
-lot: true # List of tables
+lof: true
+lot: true
 fontsize: 12pt
 linestretch: 1.5
 papersize: a4
@@ -33,10 +33,10 @@ polyglossia-otherlangs:
 babel-lang: russian
 babel-otherlangs: english
 ## Fonts
-mainfont: Liberation Serif
-romanfont: Liberation Serif
-sansfont: Liberation Sans
-monofont: Liberation Mono
+mainfont: Iosevka
+romanfont: Iosevka
+sansfont: Iosevka
+monofont: Iosevka
 mathfont: STIX Two Math
 mainfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
 romanfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
@@ -64,8 +64,8 @@ lolTitle: "Листинги"
 indent: true
 header-includes:
   - \usepackage{indentfirst}
-  - \usepackage{float} # keep figures where there are in the text
-  - \floatplacement{figure}{H} # keep figures where there are in the text
+  - \usepackage{float}
+  - \floatplacement{figure}{H}
 ---
 
 # Цель работы
