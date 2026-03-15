@@ -5,7 +5,7 @@ subtitle: "Лабораторная работа №6"
 author: "Павлушина В.А."
 
 ## Generic otions
-lang: ru-RU\
+lang: ru-RU
 toc-title: "Содержание"
 
 ## Bibliography
@@ -33,10 +33,10 @@ polyglossia-otherlangs:
 babel-lang: russian
 babel-otherlangs: english
 ## Fonts
-mainfont: IBM Plex Serif
-romanfont: IBM Plex Serif
-sansfont: IBM Plex Sans
-monofont: IBM Plex Mono
+mainfont: Liberation Serif
+romanfont: Liberation Serif
+sansfont: Liberation Sans
+monofont: Liberation Mono
 mathfont: STIX Two Math
 mainfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
 romanfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
