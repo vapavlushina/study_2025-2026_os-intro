@@ -1,12 +1,15 @@
-## Front matter
+---
+title: "Архитектура компьютеров"
+subtitle: "Лабораторная работа №6"
+author: "Павлушина Виктория Александровна"
+institute: "Российский университет дружбы народов, Москва, Россия"
+date: "16 мая 2026"
 lang: ru-RU
-title: Архитектура компьютеров
-subtitle: Лабораторная работа №6
-author:
-  - Павлушина Виктория Александровна
-institute:
-  - Российский университет дружбы народов, Москва, Россия
-date: 16 мая 2026
+aspectratio: 169
+theme: default
+colortheme: default
+fonttheme: default
+---
 
 ## i18n babel
 babel-lang: russian
