@@ -1,0 +1,152 @@
+<h1 id="информация">Информация</h1>
+<h2 id="докладчик">Докладчик</h2>
+<div class="columns" data-align="center">
+<div class="column" style="width:70%;">
+<ul>
+<li>Автор: Павлушина В.А.</li>
+<li>Группа: НКАбд-05-25</li>
+<li>Российский Универститет Дружбы Народов</li>
+<li><a href="mailto:1032253555@rudn.ru">1032253555@rudn.ru</a></li>
+</ul>
+</div><div class="column" style="width:30%;">
+
+</div>
+</div>
+<h2 id="цель-работы">Цель работы</h2>
+<p>Приобретение практических навыков взаимодействия пользователя с
+системой посредством командной строки.</p>
+<h2 id="задание">Задание</h2>
+<p>1.Выполнить навигацию по файловой системе. 2.Получить справочную
+информацию. 3.Выполнить управление каталогами. 4.Сделать анализ
+содержания каталогов. 5.Работа с history. 6.Комбинировать команды.</p>
+<h2 id="теоретическая-часть">Теоретическая часть</h2>
+<p>Команда <strong>man</strong> используется для просмотра (оперативная
+помощь) в диалоговом режиме руководства (manual) по основным командам
+операционной системы типа Linux. Формат команды:
+<code>man &lt;команда&gt;</code></p>
+<p>Команда <strong>cd</strong> используется для перемещения по файловой
+системе операционной системы типа Linux. Формат команды:
+<code>cd [путь_к_каталогу]</code></p>
+<p>Команда <strong>pwd</strong>. Для определения абсолютного пути к
+текущему каталогу используется команда <em>pwd</em> (print working
+directory).</p>
+<h2 id="section"></h2>
+<p>Команда <strong>ls</strong>. Команда <em>ls</em> используется для
+просмотра содержимого каталога. Формат команды:
+<code>ls [-опции] [путь]</code></p>
+<p>Команда <strong>mkdir</strong>. Команда <em>mkdir</em> используется
+для создания каталогов. Формат команды:
+<code>mkdir имя_каталога1 [имя_каталога2...]</code></p>
+<p>Команда <strong>rm</strong>. Команда <em>rm</em> используется для
+удаления файлов и/или каталогов. Формат команды:
+<code>rm [-опции] [файл]</code></p>
+<p>Команда <strong>history</strong>. Для вывода на экран списка ранее
+выполненных команд используется команда history. Выводимые на экран
+команды в списке нумеруются. К любой команде из выведенного на экран
+списка можно обратиться по её номеру в списке, воспользовавшись
+конструкцией !<номер_команды>.</p>
+<h1 id="выполнение-лабораторной-работы">Выполнение лабораторной
+работы</h1>
+<h2
+id="просмотрим-название-нашей-домашней-папки-рис.-fig001.">Просмотрим
+название нашей домашней папки (рис. 1).</h2>
+<figure id="fig:001">
+<img src="image/1.png" style="width:70.0%"
+alt="Figure 1: Название домашней папки" />
+<figcaption aria-hidden="true">Figure 1: Название домашней
+папки</figcaption>
+</figure>
+<p>Перейдём в каталог <em>tmp</em> и посмотрим его содержимое с помощью
+команды <em>ls</em> и опции <em>-а</em> (рис.
+<strong>¿fig:002?</strong>). <img src="image/2.png" id="fig:002"
+style="width:70.0%"
+alt="Просмотрели содержимое каталога tmp с помощью опции -a" /></p>
+<h2 id="section-1"></h2>
+<p>Посмотрим содержимое <em>tmp</em>, используя другие опции
+<strong>ls</strong> (рис. <strong>¿fig:003?</strong>), (рис.
+<strong>¿fig:004?</strong>), (рис. <strong>¿fig:005?</strong>). <img
+src="image/3.png" id="fig:003" style="width:70.0%"
+alt="Используем -alF" /> <img src="image/4.png" id="fig:004"
+style="width:70.0%" alt="Используем -F" /> <img src="image/5.png"
+id="fig:005" style="width:70.0%" alt="Используем -l" /></p>
+<p>Какая же разница в выводе информации через разные опции?
+<code>-a</code> - выводит все файлы, включая скрытые <code>-l</code> -
+выводит подробный список файлов <code>-F</code> - выводит информацию с
+символами-указателями, чтобы сразу понять тип файла <code>-alF</code> -
+включает в себя все предыдущие опции</p>
+<h2 id="section-2"></h2>
+<p>Определим, есть ли в каталоге <em>/varn/spool</em> подкаталог
+<em>cron</em> (рис. <strong>¿fig:006?</strong>). <img src="image/6.png"
+id="fig:006" style="width:70.0%"
+alt="Подкаталог cron присутствует" /></p>
+<p>Перейдём в домашний каталог и выведем его содержимое (рис.
+<strong>¿fig:007?</strong>). <img src="image/7.png" id="fig:007"
+style="width:70.0%" alt="Содержимое домашнего каталога" /></p>
+<p>Создали каталог <em>newdir</em> и в нём подкаталог <em>morefun</em>,
+также были созданы каталоги <em>letters</em>, <em>memos</em>.,
+<em>misk</em> (рис. <strong>¿fig:008?</strong>). <img src="image/8.png"
+id="fig:008" style="width:70.0%"
+alt="Создание каталогов и подкаталогов" /></p>
+<h2 id="section-3"></h2>
+<p>Удалили каталоги <em>letters</em>, <em>memos</em>., <em>misk</em>,
+попробовали удалить каталог <em>newdir</em> с помощью команды
+<strong>rm</strong> (рис. <strong>¿fig:009?</strong>). <img
+src="image/9.png" id="fig:009" style="width:70.0%"
+alt="Удаление каталогов" /></p>
+<p>Проверим, что каталог newdir не удалился (рис.
+<strong>¿fig:010?</strong>). <img src="image/10.png" id="fig:010"
+style="width:70.0%" alt="Проверка" /></p>
+<p>Удалим каталог <em>newdir</em> с подкаталогом <em>morefun</em> с
+помощью команды <strong>mrdir</strong> (рис.
+<strong>¿fig:011?</strong>). <img src="image/11.png" id="fig:011"
+style="width:70.0%" alt="Удаление каталога newdir" /></p>
+<h2 id="справочная-информация">Справочная информация</h2>
+<p>Вывели информацию о команде <strong>ls</strong> с помощью
+<strong>man</strong> (рис. <strong>¿fig:012?</strong>), (рис.
+<strong>¿fig:013?</strong>). <img src="image/12.png" id="fig:012"
+style="width:70.0%" alt="Ввели команду" /> <img src="image/13.png"
+id="fig:013" style="width:70.0%" alt="Увидели информацию" /></p>
+<p>Вывели информацию о команде <strong>cd</strong> с помощью
+<strong>man</strong> (рис. <strong>¿fig:014?</strong>), (рис.
+<strong>¿fig:015?</strong>). <img src="image/14.png" id="fig:014"
+style="width:70.0%" alt="Ввели команду" /> <img src="image/15.png"
+id="fig:015" style="width:70.0%" alt="Увидели информацию" /></p>
+<h2 id="section-4"></h2>
+<p>Вывели информацию о команде <strong>pwd</strong> с помощью
+<strong>man</strong> (рис. <strong>¿fig:016?</strong>), (рис.
+<strong>¿fig:017?</strong>). <img src="image/16.png" id="fig:016"
+style="width:70.0%" alt="Ввели команду" /> <img src="image/17.png"
+id="fig:017" style="width:70.0%" alt="Увидели информацию" /></p>
+<p>Вывели информацию о команде <strong>mkdir</strong> с помощью
+<strong>man</strong> (рис. <strong>¿fig:018?</strong>), (рис.
+<strong>¿fig:019?</strong>). <img src="image/18.png" id="fig:018"
+style="width:70.0%" alt="Ввели команду" /> <img src="image/19.png"
+id="fig:019" style="width:70.0%" alt="Увидели информацию" /></p>
+<h2 id="section-5"></h2>
+<p>Вывели информацию о команде <strong>rmdir</strong> с помощью
+<strong>man</strong> (рис. <strong>¿fig:020?</strong>), (рис.
+<strong>¿fig:021?</strong>). <img src="image/20.png" id="fig:020"
+style="width:70.0%" alt="Ввели команду" /> <img src="image/21.png"
+id="fig:021" style="width:70.0%" alt="Увидели информацию" /></p>
+<p>Вывели информацию о команде <strong>rm</strong> с помощью
+<strong>man</strong> (рис. <strong>¿fig:022?</strong>), (рис.
+<strong>¿fig:023?</strong>). <img src="image/22.png" id="fig:022"
+style="width:70.0%" alt="Ввели команду" /> <img src="image/23.png"
+id="fig:023" style="width:70.0%" alt="Увидели информацию" /></p>
+<h2 id="history">History</h2>
+<p>Вывели информацию о последних командах с помощью команды
+<strong>history</strong> (рис. <strong>¿fig:024?</strong>), (рис.
+<strong>¿fig:025?</strong>). <img src="image/24.png" id="fig:024"
+style="width:70.0%" alt="history" /> <img src="image/25.png"
+id="fig:025" style="width:70.0%" alt="history" /></p>
+<h2 id="комбинирование-команд">Комбинирование команд</h2>
+<p>Комбинируем команды (рис. <strong>¿fig:026?</strong>), (рис.
+<strong>¿fig:027?</strong>). <img src="image/25.png" id="fig:025"
+style="width:70.0%" alt="Вывели команду с помощью её номера" /> <img
+src="image/26.png" id="fig:026" style="width:70.0%"
+alt="Вывели команду, введя её номер и заменив опцию" />Просмотрим
+название нашей домашней папки (рис. 1). <img src="image/1.png"
+id="fig:001" style="width:70.0%" alt="Название домашней папки" /></p>
+<h2 id="выводы">Выводы</h2>
+<p>Приобрела практические навыки взаимодействия пользователя с системой
+посредством командной строки.</p>
