@@ -19,7 +19,7 @@ toc-title: Содержание
 slide_level: 2
 aspectratio: 169
 section-titles: true
-theme: metropolis
+-V theme: metropolis
 header-includes:
  - \metroset{progressbar=frametitle,sectionpage=progressbar,numbering=fraction}
 ---
