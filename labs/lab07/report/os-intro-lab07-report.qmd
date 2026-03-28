@@ -42,7 +42,8 @@ mainfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
 romanfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
 sansfontoptions: Ligatures=Common,Ligatures=TeX,Scale=MatchLowercase,Scale=0.94
 monofontoptions: Scale=MatchLowercase,Scale=0.94,FakeStretch=0.9
-mathfontoptions: "Iosevka"
+# mathfontoptions: "Iosevka"
+## Biblatex
 biblatex: true
 biblio-style: "gost-numeric"
 biblatexoptions:
