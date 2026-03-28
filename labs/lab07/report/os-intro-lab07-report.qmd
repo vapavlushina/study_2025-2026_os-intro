@@ -1,10 +1,9 @@
 ---
-## Front matter
 title: "Архитектура компьютеров и операционные системы"
 subtitle: "Лабораторная работа №7"
 author: "Павлушина В.А."
 
-## Generic otions
+## Generic options
 lang: ru-RU
 toc-title: "Содержание"
 
@@ -13,14 +12,21 @@ bibliography: bib/cite.bib
 csl: pandoc/csl/gost-r-7-0-5-2008-numeric.csl
 
 ## Pdf output format
-toc: true
-toc-depth: 2
-lof: true
-lot: true
-fontsize: 12pt
-linestretch: 1.5
-papersize: a4
-documentclass: scrreprt
+format:
+  pdf:
+    toc: true
+    toc-depth: 2
+    lof: true
+    lot: true
+    fontsize: 12pt
+    linestretch: 1.5
+    papersize: a4
+    documentclass: scrreprt
+  docx:
+    toc: true
+    toc-depth: 2
+    fontsize: 12pt
+
 ## I18n polyglossia
 polyglossia-lang:
   name: russian
@@ -42,7 +48,6 @@ mainfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
 romanfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
 sansfontoptions: Ligatures=Common,Ligatures=TeX,Scale=MatchLowercase,Scale=0.94
 monofontoptions: Scale=MatchLowercase,Scale=0.94,FakeStretch=0.9
-# mathfontoptions: "Iosevka"
 ## Biblatex
 biblatex: true
 biblio-style: "gost-numeric"
