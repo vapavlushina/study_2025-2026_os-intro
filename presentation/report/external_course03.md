@@ -304,7 +304,7 @@ chmod 764 file.txt и chmod ug+w file.txt; chmod u+x file.txt подходят �
 ![ Задание 3 ](image/2026-05-16_20-00-01.png){fig: 063 width=70%}
 
 Ответ: du -h -s
-![ Задание 4 ](image/2026-05-16_20-00-55.png){fig: 064width=70%}
+![ Задание 4 ](image/2026-05-16_20-00-55.png){fig: 064 width=70%}
 
 Ответ: mkdir dir{1..3}
 ![ Задание 5](image/2026-05-16_20-01-34.png){fig: 065 width=70%}
